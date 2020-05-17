@@ -12,14 +12,14 @@ public class UserDAOTest {
 		testFindByLogin2();
 	}
 	public static void testFindByLogin1() {
-		Login login = new Login("tanaka", "1234");
+		Login login = new Login("1", "1234");
 		UserDAO dao = new UserDAO();
 		User result = dao.findByLogin(login);
 		if(result != null &&
-				result.getUserId().equals("tanaka") &&
-				result.getPass().equals("1234") &&
+				result.getUserId().equals("1") &&
+				result.getName().equals("田中テスト") &&
 				result.getEmail().equals("tanaka@test.com") &&
-				result.getName().equals("田中　テスト")  ) {
+				result.getPass().equals("1234")   ) {
 			System.out.println("testFindByLogin1:成功しました");
 		}else {
 			System.out.println("testFindByLogin1:失敗しました");

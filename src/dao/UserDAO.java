@@ -20,7 +20,7 @@ public class UserDAO {
 
 		try(Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)){
 
-			String sql = "SELECT USER_ID, PASS, EMAIL, NAME FROM USERS WHERE USER_ID = ? AND PASS = ?";
+			String sql = "SELECT USER_ID, NAME, EMAIL, PASS FROM USERS WHERE USER_ID = ? AND PASS = ?";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 			pStmt.setString(1, login.getUserId());
 			pStmt.setString(2, login.getPass());
@@ -32,7 +32,7 @@ public class UserDAO {
 				String pass = rs.getString("PASS");
 				String email = rs.getString("EMAIL");
 				String name = rs.getString("NAME");
-				user = new User(userId, pass, email, name);
+				user = new User(userId, name, email, pass);
 			}
 		}catch (SQLException e) {
 			e.printStackTrace();
