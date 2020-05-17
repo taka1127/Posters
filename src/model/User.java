@@ -1,13 +1,13 @@
 package model;
 
-public class Account {
+public class User {
 
 	private String userId;
 	private String pass;
 	private String email;
 	private String name;
 
-	private Account(String userId, String pass, String email, String name) {
+	private User(String userId, String pass, String email, String name) {
 		this.userId = userId;
 		this.pass = pass;
 		this.email = email;
