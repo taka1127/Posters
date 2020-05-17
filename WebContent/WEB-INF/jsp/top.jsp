@@ -7,11 +7,11 @@
 <title>Posters</title>
 </head>
 <body>
+<p>ようこそ｛ユーザーID｝さん</p>
 
-<ul>
-<li><a href="/Posters/LoginServlet">ログイン</a></li>
-<li>ユーザー登録</li>
-</ul>
+<a href="/Posters/NewServlet">投稿する</a>
+<a href="/Posters/IndexServlet">ログアウト</a>
+
 
 </body>
 </html>
