@@ -4,13 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Posters</title>
+<title>ユーザー登録</title>
 </head>
 <body>
-<ul>
-<li><a href="/Posters/LoginServlet">ログイン</a></li>
-<li><a href="/Posters/RegisterServlet">ユーザー登録</a></li>
-</ul>
-
+<p>登録完了しました</p>
+<a href="/Posters/IndexServlet">戻る</a>
 </body>
 </html>
