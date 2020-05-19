@@ -25,7 +25,7 @@ public class CreateServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		 request.setCharacterEncoding("UTF-8");
+
 		 String message = request.getParameter("message");
          String image = request.getParameter("image");
          String video = request.getParameter("video");
