@@ -1,20 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@ page import="model.User" %>
+<%
+User registerUser = (User)session.getAttribute("registerUser");
+%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ユーザー登録</title>
+<title>Posters</title>
 </head>
 <body>
 <p>下記のユーザーを登録します</p>
 <p>
-ログインID:<c:out value="${userId}" /><br>
-ユーザー名：：<c:out value="${name}" /><br>
-メールアドレス：<c:out value="${email}" /><br>
-パスワード：<c:out value="${pass}" /><br>
+ログインID:<%= registerUser.getUserId() %><br>
+パスワード：<%= registerUser.getPass()%><br>
+メールアドレス：<%= registerUser.getEmail() %><br>
+ユーザー名：<%= registerUser.getName() %><br>
+
 </p>
 <a href="/Posters/RegisterServlet">戻る</a>
 <a href="/Posters/RegisterServlet?action=done">登録</a>

@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import dao.RegisterDAO;
 import model.RegisterUserLogic;
 import model.User;
 
@@ -46,12 +47,14 @@ public class RegisterServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		String id = request.getParameter("userId");
+		String userId = request.getParameter("userId");
 		String pass = request.getParameter("pass");
 		String email = request.getParameter("email");
 		String name = request.getParameter("name");
-		User registerUser = new User(id, pass, email, name);
+		User registerUser = new User(userId, pass, email, name);
 		//DB接続用に変える予定
+		RegisterDAO dao = new RegisterDAO();
+		dao.setData(userId, pass, email, name);
 		HttpSession session = request.getSession();
 		session.setAttribute("registerUser", registerUser);
 

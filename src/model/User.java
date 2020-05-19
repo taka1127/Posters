@@ -9,7 +9,7 @@ public class User implements Serializable{
 	private String email;
 	private String name;
 
-	public User(String userId, String name, String email, String pass) {
+	public User(String userId, String pass, String email, String name) {
 		this.userId = userId;
 		this.pass = pass;
 		this.email = email;

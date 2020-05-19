@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ユーザー登録</title>
+<title>Posters</title>
 </head>
 <body>
 <p>登録完了しました</p>
