@@ -52,7 +52,7 @@ public class RegisterServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String name = request.getParameter("name");
 		User registerUser = new User(userId, pass, email, name);
-		//DB接続用に変える予定
+
 		RegisterDAO dao = new RegisterDAO();
 		dao.setData(userId, pass, email, name);
 		HttpSession session = request.getSession();
