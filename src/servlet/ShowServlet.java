@@ -84,7 +84,7 @@ public class ShowServlet extends HttpServlet {
 	        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/show.jsp");
 	        dispatcher.forward(request,response);
 	        System.out.println("-----表示中の画面-----");
-	        System.out.println("/show?post_id=" + request.getParameter("post_id"));
+	        System.out.println("/show?post_id=" + request.getParameter("POST_ID"));
 	        System.out.println("");
 	    }
 }

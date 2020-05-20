@@ -21,16 +21,17 @@ public class PostDAO {
 
 
 		try ( Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
-			String sql = "SELECT MESSAGE, IMAGE, VIDEO FROM POSTS ";
+			String sql = "SELECT * FROM POSTS ";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 
 			ResultSet rs = pStmt.executeQuery();
 
 			while(rs.next()) {
+				int post_id = rs.getInt("POST_ID");
 				String message = rs.getString("MESSAGE");
 				String image = rs.getString("IMAGE");
 				String video = rs.getString("VIDEO");
-				Post post = new Post( message, image, video);
+				Post post = new Post(post_id, message, image, video);
 				postList.add(post);
 			}
 		}catch (SQLException e) {

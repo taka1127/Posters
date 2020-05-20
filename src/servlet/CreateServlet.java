@@ -41,6 +41,7 @@ public class CreateServlet extends HttpServlet {
 
 
 
+//		 int post_id = Integer.parseInt(request.getParameter("post_id"));
 		 String message = request.getParameter("message");
          String image = request.getParameter("image");
          String video = request.getParameter("video");
