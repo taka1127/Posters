@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,8 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import model.GetPostListLogic;
 import model.Login;
 import model.LoginLogic;
+import model.Post;
 
 
 @WebServlet("/LoginServlet")
@@ -27,6 +30,9 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		GetPostListLogic getPostListLogic = new GetPostListLogic();
+		List<Post> postList = getPostListLogic.execute();
+		request.setAttribute("postList", postList);
 
 		String userId = request.getParameter("userId");
 		String pass = request.getParameter("pass");
@@ -42,9 +48,12 @@ public class LoginServlet extends HttpServlet {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/top.jsp");
 			dispatcher.forward(request, response);
 
+
+
 		}else {
 			response.sendRedirect("/Posters/LoginServlet");
 		}
+
 
 
 	}
