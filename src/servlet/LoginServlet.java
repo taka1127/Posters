@@ -26,51 +26,6 @@ public class LoginServlet extends HttpServlet {
 
 		 response.getWriter().append("Served at: ").append(request.getContextPath());
 
-//	        //DB connection
-//		 	String url = "jdbc:h2:tcp://localhost/~/posters";
-//	        String user ="sa";
-//	        String password = "";
-//
-//
-//
-//	        try {
-//	            Connection connection = DriverManager.getConnection(url, user, password);
-//	            connection.setAutoCommit(false);
-//	            String sql = "SELECT * FROM POSTS;";
-//	            PreparedStatement statement = connection.prepareStatement(sql);
-//
-//
-//	            ResultSet results = statement.executeQuery();
-//
-//	            ArrayList<HashMap<String,String>> rows = new ArrayList<HashMap<String,String>>();
-//
-//	            while(results.next()) {
-//	                HashMap<String,String> columns = new HashMap<String,String>();
-//
-//	                String post_id = results.getString("POST_ID");
-//	                columns.put("POST_ID",post_id);
-//
-//	                String message = results.getString("message");
-//	                columns.put("message", message);
-//
-//	                String image = results.getString("image");
-//	                columns.put("image",image);
-//
-//	                String video = results.getString("video");
-//	                columns.put("video",video);
-//
-//	                rows.add(columns);
-//	            }
-//	            request.setAttribute("rows", rows);
-//	            results.close();
-//	            statement.close();
-//
-//
-//	        } catch(Exception e) {
-//	            e.printStackTrace();
-//	        }
-
-
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/login.jsp");
 		dispatcher.forward(request, response);
