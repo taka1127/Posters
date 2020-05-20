@@ -26,8 +26,11 @@ public class LoginServlet extends HttpServlet {
 
 		 response.getWriter().append("Served at: ").append(request.getContextPath());
 
+		 GetPostListLogic getPostListLogic = new GetPostListLogic();
+			List<Post> postList = getPostListLogic.execute();
+			request.setAttribute("postList", postList);
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/login.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/top.jsp");
 		dispatcher.forward(request, response);
 	}
 

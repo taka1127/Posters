@@ -8,6 +8,6 @@
 </head>
 <body>
 <p>登録完了しました</p>
-<a href="/Posters/IndexServlet">戻る</a>
+<a href="/Posters/LoginServlet">トップへ</a>
 </body>
 </html>

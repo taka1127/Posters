@@ -8,6 +8,6 @@
 </head>
 <body>
 <p>削除しました</p>
-<a href="/Posters/IndexServlet">戻る</a>
+<a href="/Posters/LoginServlet">トップへ</a>
 </body>
 </html>
