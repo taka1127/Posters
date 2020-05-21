@@ -8,17 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>MEMO DETAIL</h2>
- <p>This app is made by Java Servlet and JSP.</p>
-
+<h2>投稿内容</h2>
 
 <br>
 <form action="/Posters/DeleteServlet?POST_ID=<%= request.getAttribute("POST_ID") %>" method="POST">
-<p>ID: <%= request.getAttribute("post_id") %></p>
-<p>TITLE: <%= request.getAttribute("message") %></p>
-<p>CONTENT:</p>
-<p><%= request.getAttribute("image") %></p>
-<p><%= request.getAttribute("video") %></p>
+<p>TITLE: <%= request.getAttribute("title") %></p>
+<p>CONTENT: <%= request.getAttribute("message") %></p>
 <br>
 <input type="submit" value="削除">
  </form>

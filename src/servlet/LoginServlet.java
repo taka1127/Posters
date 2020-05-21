@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 			List<Post> postList = getPostListLogic.execute();
 			request.setAttribute("postList", postList);
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/top.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/login.jsp");
 		dispatcher.forward(request, response);
 	}
 

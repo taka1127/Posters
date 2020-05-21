@@ -57,16 +57,11 @@ public class ShowServlet extends HttpServlet {
 	                int post_id = results.getInt("POST_ID");
 	                request.setAttribute("POST_ID", post_id);
 
+	                String title = results.getString("title");
+	                request.setAttribute("title", title);
+
 	                String message = results.getString("message");
 	                request.setAttribute("message", message);
-
-
-	                String image = results.getString("image");
-	                request.setAttribute("image", image);
-
-	                String video = results.getString("video");
-	                request.setAttribute("video", video);
-
 
 	            }
 	            request.setAttribute("rows", rows);

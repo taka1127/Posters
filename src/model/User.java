@@ -15,16 +15,13 @@ public class User implements Serializable{
 		this.email = email;
 		this.name = name;
 	}
-	public String getUserId() {
-		return userId;
-	}
-	public String getPass() {
-		return pass;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public String getName() {
-		return name;
-	}
+
+	public String getUserId() {return userId;}
+
+	public String getPass() {return pass;}
+
+	public String getEmail() {return email;}
+
+	public String getName() {return name;}
+
 }

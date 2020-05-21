@@ -14,12 +14,10 @@
 <p></p>
 
 <form action="/Posters/CreateServlet" method="POST">
-<p>MESSAGE:</p>
+<p>タイトル:</p>
+<input type=text name="title">
+<p>メッセージ:</p>
 <input type=text name="message">
-<p>IMAGE:</p>
-<input type="file" name="image" accept="image/*" multiple>
-<p>VIDEO:</p>
-<input type="file" name="video" accept="video/*" multiple>
 <p></p>
 <input type="submit" value="投稿">
  </form>

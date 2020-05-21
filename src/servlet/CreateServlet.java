@@ -42,14 +42,13 @@ public class CreateServlet extends HttpServlet {
 
 
 //		 int post_id = Integer.parseInt(request.getParameter("post_id"));
+		 String title = request.getParameter("title");
 		 String message = request.getParameter("message");
-         String image = request.getParameter("image");
-         String video = request.getParameter("video");
-         Post post = new Post(message, image, video);
+         Post post = new Post(title, message);
 
 
          PostDAO dao = new PostDAO();
- 		 dao.setData(message, image, video);
+ 		 dao.setData(title, message);
 
 		 String forward = "/Posters/CreateServlet";
 		 response.sendRedirect(forward);

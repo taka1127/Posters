@@ -28,10 +28,9 @@ public class PostDAO {
 
 			while(rs.next()) {
 				int post_id = rs.getInt("POST_ID");
+				String title = rs.getString("TITLE");
 				String message = rs.getString("MESSAGE");
-				String image = rs.getString("IMAGE");
-				String video = rs.getString("VIDEO");
-				Post post = new Post(post_id, message, image, video);
+				Post post = new Post(post_id, title,message);
 				postList.add(post);
 			}
 		}catch (SQLException e) {
@@ -41,17 +40,16 @@ public class PostDAO {
 		return postList;
 	}
 
-	public void setData(String message, String image, String video) {
+	public void setData(String title, String message) {
 
 
 		try(Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)){
 
 			//	Statement stmt = conn.createStatement();
-			String sql = "INSERT INTO POSTS(  MESSAGE, IMAGE, VIDEO ) VALUES(?, ?, ?) ";
+			String sql = "INSERT INTO POSTS(  TITLE, MESSAGE ) VALUES(?,?) ";
 			PreparedStatement pStmt = conn.prepareStatement(sql);
-			pStmt.setString(1, message);
-	        pStmt.setString(2, image);
-	        pStmt.setString(3, video);
+			pStmt.setString(1, title);
+			pStmt.setString(2, message);
 	        pStmt.executeUpdate();
 
 
