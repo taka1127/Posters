@@ -33,18 +33,16 @@
 				※パスワード：<input type ="password" size="40" name = "pass"><br>
 				※メールアドレス：<input type ="email" size="40" name = "email"><br>
 				※ユーザー名：<input type ="text" size="40" name = "name"><br>
+				<p>※ の付いている項目は必須項目です。</p>
 				<input type="submit" value="	確認" class="button">
 			</form>
             <div class="attention">
-              <p>※ の付いている項目は必須項目です。
+
             </div>
           </div>
         </section>
       </div>
     </div>
   </div>
-  <footer>
-    <small>Posters.</small>
-  </footer>
 </body>
 </html>

@@ -17,7 +17,7 @@
     </div>
     <nav>
       <ul class="global-nav">
-        <li><a href="/Posters/RegisterServlet">ログイン画面へ</a></li>
+        <li><a href="/Posters/LoginServlet">ログイン画面へ</a></li>
       </ul>
     </nav>
   </header>
@@ -40,8 +40,6 @@
 
       </div>
     </div>
-  <footer>
-    <small>Posters.</small>
-  </footer>
+
 </body>
 </html>

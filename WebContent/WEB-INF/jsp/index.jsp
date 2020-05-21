@@ -10,15 +10,12 @@
 </head>
 <body id="index">
 
-  <!-- header始まり -->
   <header>
     <div class="logo">
 
     </div>
   </header>
-  <!-- header終わり -->
 
-  <!-- wrap始まり -->
   <div id="wrap">
     <div class="content">
       <h1>Posters!</h1>
@@ -27,13 +24,6 @@
       <p class="btn"><a href="/Posters/RegisterServlet">ユーザー登録</a></p>
     </div>
   </div>
-  <!-- wrap終わり -->
-
-  <!-- footer始まり -->
-  <footer>
-    <small>Posters.</small>
-  </footer>
-  <!-- footer終わり -->
 
 </body>
 </html>

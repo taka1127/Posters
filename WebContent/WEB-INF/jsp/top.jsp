@@ -16,7 +16,6 @@
   <header>
     <div class="logo">
       <h1>ようこそ<c:out value="${userId }" />さん</h1>
-
     </div>
 
     <nav>
@@ -38,8 +37,7 @@
           <h2 class="icon">タイトル</h2>
           <ul class="clearfix post-list">
             <li><c:forEach var="post" items="${postList }">
-            <c:out value="${post.title}"></c:out>
-			<a href="/Posters/ShowServlet?POST_ID=${post.post_id}">詳細</a>
+            <p><c:out value="${post.title}"></c:out><a href="/Posters/ShowServlet?POST_ID=${post.post_id}">詳細</a></p>
 			</c:forEach>
 			</li>
           </ul>

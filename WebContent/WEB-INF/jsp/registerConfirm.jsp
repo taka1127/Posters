@@ -40,15 +40,13 @@ User registerUser = (User)session.getAttribute("registerUser");
 				メールアドレス：<%= registerUser.getEmail() %><br>
 				ユーザー名：<%= registerUser.getName() %><br>
 				</p>
-            <a href="/Posters/RegisterServlet?action=done">登録</a>
+
             </div>
           </div>
 
       </div>
     </div>
-  <footer>
-    <small>Posters.</small>
-  </footer>
+  <p class="btn"> <a href="/Posters/RegisterServlet?action=done">登録</a></p>
 </body>
 </html>
 

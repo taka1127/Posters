@@ -16,6 +16,7 @@
     </div>
     <nav>
       <ul class="global-nav">
+
       </ul>
     </nav>
   </header>
@@ -25,11 +26,10 @@
       <div class="main-center">
         <h1>削除しました</h1>
 
-        <section>
-          <a href="/Posters/LoginServlet">トップへ</a>
-        </section>
+
       </div>
     </div>
   </div>
+   <p class="btn"><a href="/Posters/LoginServlet">トップへ</a></p>
 </body>
 </html>

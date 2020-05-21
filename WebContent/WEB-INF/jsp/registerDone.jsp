@@ -26,13 +26,12 @@
         <h1>登録完了しました!</h1>
 
         <section>
-          <a href="/Posters/LoginServlet">トップへ</a>
+
         </section>
       </div>
     </div>
   </div>
-  <footer>
-    <small>Posters.</small>
-  </footer>
+
+  <p class="btn"> <a href="/Posters/LoginServlet">ログイン画面へ</a></p>
 </body>
 </html>

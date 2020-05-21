@@ -45,6 +45,7 @@ header {
 .logo {
   float: left;
   margin-top: 50px;
+  color: #ffffff;
 }
 
 .global-nav {
@@ -97,6 +98,7 @@ footer small {
 h1 {
   font-family: 'Bitter', serif;
   font-size: 36px;
+  color:#ffffff;
   border-bottom: 1px solid #cccccc;
 }
 

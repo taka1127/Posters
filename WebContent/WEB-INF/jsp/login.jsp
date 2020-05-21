@@ -43,10 +43,5 @@
       </div>
     </div>
   </div>
-
-  <footer>
-    <small>Posters.</small>
-  </footer>
-
 </body>
 </html>

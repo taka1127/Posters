@@ -34,11 +34,10 @@
 				<input type=text size="40" name="title" class="title">
 				<p>※メッセージ</p>
 				<textarea name="message" cols="80" rows="8" class="message"></textarea>
-				<p></p>
+				<p>※ の付いている項目は必須項目です。</p>
 				<input type="submit" value="投稿">
 			 </form>
             <div class="attention">
-              <p>※ の付いている項目は必須項目です。
             </div>
           </div>
         </section>

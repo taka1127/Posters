@@ -87,7 +87,8 @@ footer {
   text-align: center;
   color: #ffffff;
   padding: 20px 0;
-  background-color: #767671;
+  margin: 0 100px
+  background-color: #c0c0c0;
 }
 
 footer small {
@@ -196,4 +197,19 @@ input .button {
 
 #contact .form .attention {
   margin: 20px 0 0 165px;
+}
+
+.btn a {
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Bitter', serif;
+  width: 185px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+  margin-left: 200px;
 }

@@ -87,7 +87,8 @@ footer {
   text-align: center;
   color: #ffffff;
   padding: 20px 0;
-  background-color: #767671;
+  margin: 0 100px;
+  background-color: #c0c0c0;
 }
 
 footer small {
