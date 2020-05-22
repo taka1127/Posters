@@ -57,7 +57,7 @@ public class LoginServlet extends HttpServlet {
 
 
 		}else {
-			response.sendRedirect("/Posters/LoginServlet");
+			response.sendRedirect("Posters/LoginServlet");
 		}
 
 

@@ -1,0 +1,11 @@
+<web-app>
+     <servlet>
+          <servlet-name>IndexServlet</servlet-name>
+          <servlet-name>CreateServlet</servlet-name>
+          <servlet-name>DeleteServlet</servlet-name>
+          <servlet-name>LoginServlet</servlet-name>
+          <servlet-name>NewServlet</servlet-name>
+          <servlet-name>RegisterServlet</servlet-name>
+          <servlet-name>ShowServlet</servlet-name>
+     </servlet>
+</web-app>
